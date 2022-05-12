@@ -13,8 +13,8 @@ use App\Http\Controllers\Crudcontroller;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/',[Crudcontroller::class,'index']);
-Route::post('novo',[Crudcontroller::class,'store']);
+Route::get('/',[Crudcontroller::class,'index'])->name('pagina-principal');
+Route::post('novo',[Crudcontroller::class,'store'])->name('novo');
 Route::get('{id}/update',[Crudcontroller::class,'update'])->name('update');
 Route::put('/{id}',[Crudcontroller::class,'edit'])->name('edit');
 Route::get('/{id}/delete',[Crudcontroller::class,'delete'])->name('delete');

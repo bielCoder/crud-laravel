@@ -11,6 +11,9 @@
     <title>Aula Crud</title>
 </head>
 <body>
+
+      <!-- Aqui será apresentado um flash-message  de acordo com a ação requisitada-->
+
       <main>
          @if(session('add'))
             <p class="sucess">{{session('add')}}</p>
@@ -21,7 +24,7 @@
          @endif
       </main>
 
-     
+     <!--Este é o formulario de execução do sistema insert-->
 
  <form action="novo" method="post">
     @csrf
@@ -31,7 +34,7 @@
     <input type="submit" name="Enviar">
  </form>
 
-  
+  <!-- Aqui é a Tabela onde guarda todos os dados uma vez que registrado -->
    <table>
       <tr> 
          <th>Nome</th>  

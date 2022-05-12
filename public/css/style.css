@@ -1,6 +1,6 @@
 @charset = 'UTF-8';
 
-
+/*Estilização de tabela*/
 table{
 	float: right;
 	margin: -30px 5px 5px 5px;
@@ -27,7 +27,7 @@ table th{
 	border-right: solid 2px white;
 
 }
-
+/*estilização dos botões*/
 svg.pencil{
 	color: green;
 	width: 20px;
@@ -41,6 +41,7 @@ svg.delete{
 	margin: 5px;
 }
 
+/*Estilização dos flash-messages*/
 p.sucess{
 	background-color: #a8f5a8;
 	margin: 0;

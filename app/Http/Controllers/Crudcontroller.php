@@ -7,12 +7,16 @@ use App\Models\Crud;
 
 class Crudcontroller extends Controller
 {
+    // Pagina Principal
+
     public function index(){
         $show = Crud::all();
         return view('index',[
             'show' => $show,      
             ]);
     }
+
+    // Guarda todos os dados no banco
 
     public function store(Request $request){
             $all = new Crud;
@@ -24,6 +28,7 @@ class Crudcontroller extends Controller
                 
     }
 
+    // Pagina de Atualização de cadastro 
     public function update($id){
         $show = Crud::all();
         $id = Crud::findorfail($id);
@@ -33,6 +38,7 @@ class Crudcontroller extends Controller
         ]);
     }
 
+    //Atualiza todos os dados 
 
     public function edit(Request $request,$id){
         $data = [
@@ -47,6 +53,8 @@ class Crudcontroller extends Controller
        return redirect('/')->with('update','Atualizado com Sucesso!');
         
     }
+
+        // deleta todos os dados
 
     public function delete($id){
         $delete = Crud::findorfail($id);
