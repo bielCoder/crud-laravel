@@ -39,5 +39,34 @@ svg.delete{
 	color: #f35858;
 	width: 20px;
 	margin: 5px;
+}
 
+p.sucess{
+	background-color: #a8f5a8;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	color: green;
+	font-weight: bold;
+	padding: 10px;
+}
+
+p.update{
+	background-color: #cccce7;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	color: #0a0a91;
+	font-weight: bold;
+	padding: 10px;
+}
+
+p.remove{
+	background-color:#f97070;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	color: #600202;
+	font-weight: bold;
+	padding: 10px;
 }

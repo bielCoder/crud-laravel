@@ -20,7 +20,7 @@ class Crudcontroller extends Controller
             $all -> email = $request -> email;
             $all -> telefone = $request -> telefone;
             $all -> save();
-           return redirect('/')->with('msg','Cadastrado com Sucesso!');
+           return redirect('/')->with('add','Cadastrado com Sucesso!');
                 
     }
 
@@ -44,7 +44,7 @@ class Crudcontroller extends Controller
 
        Crud::findorfail($id)->update($data);
 
-       return redirect('/')->with('msg','Atualizado com Sucesso!');
+       return redirect('/')->with('update','Atualizado com Sucesso!');
         
     }
 
@@ -53,7 +53,7 @@ class Crudcontroller extends Controller
         
         $delete -> delete();
 
-        return redirect('/')->with('msg','Removido com Sucesso!');
+        return redirect('/')->with('remove','Removido com Sucesso!');
     }
 
 

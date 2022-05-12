@@ -11,9 +11,15 @@
     <title>Aula Crud</title>
 </head>
 <body>
-
-       
-            <p> {{session('msg')}}</p>
+      <main>
+         @if(session('add'))
+            <p class="sucess">{{session('add')}}</p>
+         @elseif(session('update'))
+            <p class="update">{{session('update')}}</p>
+         @elseif(session('remove'))
+            <p class="remove">{{session('remove')}}</p>
+         @endif
+      </main>
 
      
 
