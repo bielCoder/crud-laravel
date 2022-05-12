@@ -1,0 +1,43 @@
+@charset = 'UTF-8';
+
+
+table{
+	float: right;
+	margin: -30px 5px 5px 5px;
+	background-color: #efefef;
+	padding: 20px;
+	text-align: left;
+	border-radius: 8px;
+
+}
+
+table tr td{
+	padding-left: 15px;
+	text-align: left;
+	z-index: 9999;
+	border: solid 2px white;
+}
+
+table th{
+	text-align: center;
+	background-color: gray;
+	border-radius: 8px 8px 0px 0px;
+	color: white;
+	padding: 5px;
+	border-right: solid 2px white;
+
+}
+
+svg.pencil{
+	color: green;
+	width: 20px;
+	margin: 5px;
+
+}
+
+svg.delete{
+	color: #f35858;
+	width: 20px;
+	margin: 5px;
+
+}
